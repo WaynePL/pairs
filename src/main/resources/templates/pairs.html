@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+	<link rel="stylesheet" type="text/css" href="./css/layout.css">
+	<title></title>
+</head>
+<body>
+	<header>
+		<div class="random_button">
+			<a href="/pairs">Randomize the pairs</a>
+		</div>
+	</header>
+	<section class="container">
+		<div class="main">
+			<div class="row">
+				
+				<div class="pair" th:each="studentPair : ${studentPairs}">
+					<div class="student" th:each="student : ${studentPair}">
+						<div th:text="${student.name}"></div>
+					</div>
+				</div>
+			
+			</div>
+		</div>
+	</section>
+</body>
+</html>

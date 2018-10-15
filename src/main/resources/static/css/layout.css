@@ -1,0 +1,14 @@
+.main{
+	display: grid;
+	grid-template-rows: auto;
+	grid-template-columns: auto: 
+}
+
+.row{
+	display:flex;
+	justify-content: space-around;
+}
+
+.pair{
+	border: 2px solid black;
+}
